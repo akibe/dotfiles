@@ -70,6 +70,7 @@ cask "font-noto-serif-cjk-jp"
 cask "font-ricty-diminished"
 cask "font-roboto-flex"
 cask "font-roboto-slab"
+cask "font-fira-code"
 
 # MacApp
 brew "mas"
