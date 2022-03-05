@@ -51,6 +51,7 @@ cask "appcleaner"
 cask "jdownloader"
 cask "skitch"
 cask "keka"
+cask "maccy"
 
 # Communicate
 cask "slack"
