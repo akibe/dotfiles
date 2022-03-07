@@ -6,6 +6,7 @@ tap "homebrew/cask"
 cask "google-chrome"
 cask "firefox"
 cask "brave-browser"
+cask "microsoft-edge"
 
 # Business
 cask "microsoft-auto-update"
