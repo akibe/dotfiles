@@ -78,4 +78,3 @@ cask "font-fira-code"
 # MacApp
 brew "mas"
 mas "Meeter", id: 1510445899
-mas "Tunacan", id: 1594063111
