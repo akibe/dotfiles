@@ -56,6 +56,7 @@ cask "jdownloader"
 cask "skitch"
 cask "keka"
 cask "maccy"
+cask "vanilla"
 
 # Communicate
 cask "slack"
