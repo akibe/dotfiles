@@ -57,6 +57,7 @@ cask "skitch"
 cask "keka"
 cask "maccy"
 cask "vanilla"
+cask "alfred"
 
 # Communicate
 cask "slack"
