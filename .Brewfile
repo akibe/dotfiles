@@ -58,6 +58,7 @@ cask "keka"
 cask "maccy"
 cask "vanilla"
 cask "alfred"
+cask "scroll-reverser"
 
 # Communicate
 cask "slack"
