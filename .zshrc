@@ -1,11 +1,12 @@
-# Tabで選択できるように
-zstyle ':completion:*:default' menu select=2
+export LANG=ja_JP.UTF-8
 
-# 補完で大文字にもマッチ
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+# 色を使用
+autoload -Uz colors
+colors
 
-# ファイル補完候補に色を付ける
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# 補完
+autoload -Uz compinit
+compinit
 
 setopt auto_param_slash       # ディレクトリ名の補完で末尾の / を自動的に付加し、次の補完に備える
 setopt mark_dirs              # ファイル名の展開でディレクトリにマッチした場合 末尾に / を付加
@@ -24,8 +25,11 @@ setopt print_eight_bit        # 日本語ファイル名を表示可能にする
 setopt hist_ignore_all_dups   # 同じコマンドをヒストリに残さない
 setopt auto_cd                # ディレクトリ名だけでcdする
 setopt no_beep                # ビープ音を消す
+setopt auto_pushd             # ディレクトリを自動でスタックに追加
 
 # コマンドを途中まで入力後、historyから絞り込み
 autoload -Uz history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
