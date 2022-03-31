@@ -57,9 +57,9 @@ cask "jdownloader"
 cask "skitch"
 cask "keka"
 cask "maccy"
-cask "vanilla"
 cask "alfred"
 cask "scroll-reverser"
+cask "hiddenbar"
 
 # Communicate
 cask "slack"
