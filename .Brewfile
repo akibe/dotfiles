@@ -15,6 +15,7 @@ cask "microsoft-powerpoint"
 cask "microsoft-teams"
 
 # Develop
+brew "ghq"
 cask "docker"
 cask "visual-studio-code"
 cask "coteditor"
