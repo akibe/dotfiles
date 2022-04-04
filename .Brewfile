@@ -69,6 +69,7 @@ cask "discord"
 cask "obs"
 
 # Font
+brew "svn"
 tap "homebrew/cask-fonts"
 cask "font-fontawesome"
 cask "font-mplus"
@@ -76,9 +77,11 @@ cask "font-rounded-mplus"
 cask "font-noto-color-emoji"
 cask "font-noto-sans-cjk-jp"
 cask "font-noto-serif-cjk-jp"
-cask "font-ricty-diminished"
-cask "font-roboto-flex"
-cask "font-roboto-slab"
+cask "font-biz-udgothic"
+cask "font-biz-udmincho"
+cask "font-biz-udpgothic"
+cask "font-biz-udpmincho"
+cask "font-roboto"
 cask "font-fira-code"
 
 # MacApp
