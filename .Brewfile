@@ -82,7 +82,6 @@ cask "font-biz-udmincho"
 cask "font-biz-udpgothic"
 cask "font-biz-udpmincho"
 cask "font-roboto"
-cask "font-fira-code"
 cask "font-udev-gothic"
 
 # MacApp
