@@ -60,6 +60,7 @@ cask "maccy"
 cask "alfred"
 cask "scroll-reverser"
 cask "hiddenbar"
+cask "eqmac"
 
 # Communicate
 cask "slack"
