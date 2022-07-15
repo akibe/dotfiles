@@ -56,7 +56,7 @@ cask "appcleaner"
 cask "jdownloader"
 cask "keka"
 cask "maccy"
-cask "alfred"
+cask "raycast"
 cask "scroll-reverser"
 cask "hiddenbar"
 
