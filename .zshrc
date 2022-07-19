@@ -1,5 +1,12 @@
 export LANG=ja_JP.UTF-8
 
+# Node
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# GO
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$GOPATH:bin
+
 # 色を使用
 autoload -Uz colors
 colors
@@ -33,3 +40,15 @@ zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
+
+## ghqとの連携。ghqの管理化にあるリポジトリを一覧表示する。ctrl - ]にバインド。
+function peco-src () {
+  local selected_dir=$(ghq list -p | peco --prompt="repositories >" --query "$LBUFFER")
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-src
+bindkey '^]' peco-src

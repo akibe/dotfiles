@@ -16,6 +16,9 @@ cask "microsoft-teams"
 
 # Develop
 brew "ghq"
+brew "peco"
+brew "nodebrew"
+brew "go"
 cask "docker"
 cask "visual-studio-code"
 cask "coteditor"
