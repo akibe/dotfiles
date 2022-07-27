@@ -47,6 +47,7 @@ cask "magicavoxel"
 cask "vlc"
 
 # Tools
+brew "ffmpeg"
 cask "1password"
 cask "authy"
 cask "rectangle"
