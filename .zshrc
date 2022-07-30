@@ -7,6 +7,10 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export GOPATH=$(go env GOPATH)
 export PATH=$PATH:$GOPATH:bin
 
+# PNPM
+export PNPM_HOME=$HOME/Library/pnpm
+export PATH="$PNPM_HOME:$PATH"
+
 # 色を使用
 autoload -Uz colors
 colors
