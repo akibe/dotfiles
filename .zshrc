@@ -11,6 +11,11 @@ export PATH=$PATH:$GOPATH:bin
 export PNPM_HOME=$HOME/Library/pnpm
 export PATH="$PNPM_HOME:$PATH"
 
+# PYTHON
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # 色を使用
 autoload -Uz colors
 colors
