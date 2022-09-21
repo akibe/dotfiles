@@ -34,6 +34,7 @@ cask "tableplus"
 cask "sitesucker-pro"
 cask "pixelsnap"
 cask "cleanshot"
+cask "ipfs"
 #cask "dash"
 #cask "ngrok"
 #cask "fastlane"
@@ -47,6 +48,7 @@ cask "affinity-publisher"
 cask "blender"
 cask "magicavoxel"
 cask "vlc"
+cask "handbrake"
 
 # Tools
 brew "ffmpeg"
@@ -66,6 +68,7 @@ cask "maccy"
 cask "raycast"
 cask "scroll-reverser"
 cask "hiddenbar"
+cask "ogdesign-eagle"
 
 # Communicate
 cask "slack"
