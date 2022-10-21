@@ -49,6 +49,7 @@ cask "blender"
 cask "magicavoxel"
 cask "vlc"
 cask "handbrake"
+cask "loopback"
 
 # Tools
 brew "ffmpeg"
@@ -69,6 +70,7 @@ cask "raycast"
 cask "scroll-reverser"
 cask "hiddenbar"
 cask "ogdesign-eagle"
+cask "qlimagesize" 
 
 # Communicate
 cask "slack"
