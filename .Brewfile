@@ -17,7 +17,7 @@ cask "microsoft-teams"
 # Develop
 brew "ghq"
 brew "peco"
-brew "nodebrew"
+brew "volta"
 brew "google-cloud-sdk"
 brew "go"
 brew "pyenv"

@@ -1,15 +1,12 @@
 export LANG=ja_JP.UTF-8
 
 # Node
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 # GO
 export GOPATH=$(go env GOPATH)
 export PATH=$PATH:$GOPATH:bin
-
-# PNPM
-export PNPM_HOME=$HOME/Library/pnpm
-export PATH="$PNPM_HOME:$PATH"
 
 # PYTHON
 export PYENV_ROOT="$HOME/.pyenv"
@@ -49,6 +46,12 @@ zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/t_sakamoto/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/t_sakamoto/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/t_sakamoto/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/t_sakamoto/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 ## ghqとの連携。ghqの管理化にあるリポジトリを一覧表示する。ctrl - ]にバインド。
 function peco-src () {
