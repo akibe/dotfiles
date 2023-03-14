@@ -51,6 +51,7 @@ cask "magicavoxel"
 cask "vlc"
 cask "handbrake"
 cask "loopback"
+cask "imageoptim"
 
 # Tools
 brew "ffmpeg"
