@@ -52,6 +52,7 @@ cask "vlc"
 cask "handbrake"
 cask "loopback"
 cask "imageoptim"
+cask "sketch"
 
 # Tools
 brew "ffmpeg"
