@@ -74,6 +74,7 @@ cask "scroll-reverser"
 cask "hiddenbar"
 cask "ogdesign-eagle"
 cask "qlimagesize" 
+cask "cooviewer" 
 
 # Communicate
 cask "slack"
