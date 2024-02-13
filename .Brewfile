@@ -75,6 +75,7 @@ cask "hiddenbar"
 cask "ogdesign-eagle"
 cask "qlimagesize" 
 cask "cooviewer" 
+cask "onyx"
 
 # Communicate
 cask "slack"
