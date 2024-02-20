@@ -21,6 +21,9 @@ brew "volta"
 brew "google-cloud-sdk"
 brew "go"
 brew "pyenv"
+brew "git"
+brew "orbstack"
+
 cask "docker"
 cask "visual-studio-code"
 cask "coteditor"
@@ -35,7 +38,7 @@ cask "sitesucker-pro"
 cask "pixelsnap"
 cask "cleanshot"
 cask "ipfs"
-brew "git"
+
 #cask "dash"
 #cask "ngrok"
 #cask "fastlane"
@@ -56,6 +59,7 @@ cask "sketch"
 
 # Tools
 brew "ffmpeg"
+
 cask "1password"
 cask "easyfind"
 cask "authy"
@@ -86,6 +90,7 @@ cask "obs"
 
 # Font
 brew "svn"
+
 tap "homebrew/cask-fonts"
 cask "font-fontawesome"
 cask "font-mplus"
@@ -103,4 +108,5 @@ cask "font-udev-gothic"
 
 # MacApp
 brew "mas"
+
 mas "Meeter", id: 1510445899
