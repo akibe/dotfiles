@@ -125,5 +125,6 @@ cask "font-udev-gothic-nf"
 
 # MacApp
 brew "mas"
-mas "ColorSlurp", id: 1287239339
-mas "RunCat", id: 1429033973
+mas "colorslurp", id: 1287239339
+mas "runcat", id: 1429033973
+mas "tunacan-2", id: 1594063111
