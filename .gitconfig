@@ -4,3 +4,6 @@
 
 [ghq]
 	root = ~/Repos
+
+[init]
+	defaultBranch = main

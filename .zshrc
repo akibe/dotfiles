@@ -1,18 +1,5 @@
 export LANG=ja_JP.UTF-8
 
-# Node
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
-# GO
-export GOPATH=$(go env GOPATH)
-export PATH=$PATH:$GOPATH:bin
-
-# PYTHON
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 # 色を使用
 autoload -Uz colors
 colors
@@ -47,13 +34,7 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/t_sakamoto/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/t_sakamoto/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/t_sakamoto/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/t_sakamoto/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
-## ghqとの連携。ghqの管理化にあるリポジトリを一覧表示する。ctrl - ]にバインド。
+# ghqとの連携。ghqの管理化にあるリポジトリを一覧表示する。ctrl - ]にバインド。
 function peco-src () {
   local selected_dir=$(ghq list -p | peco --prompt="repositories >" --query "$LBUFFER")
   if [ -n "$selected_dir" ]; then
@@ -64,3 +45,17 @@ function peco-src () {
 }
 zle -N peco-src
 bindkey '^]' peco-src
+
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# OrbStack
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+
+# proto
+export PROTO_HOME="$HOME/.proto";
+export PATH="$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH";
+
+# Google Cloud
+if [ -f '/Users/t_sakamoto/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/t_sakamoto/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/t_sakamoto/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/t_sakamoto/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
