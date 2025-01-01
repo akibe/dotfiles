@@ -3,7 +3,6 @@
 tap "homebrew/core"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "hashicorp/tap"
 tap "moonrepo/proto" "https://github.com/moonrepo/proto"
 
 # Browser
@@ -21,8 +20,6 @@ brew "go"
 brew "pyenv"
 brew "git"
 brew "orbstack"
-brew "hashicorp/tap/terraform"
-
 cask "visual-studio-code"
 cask "coteditor"
 cask "transmit"
