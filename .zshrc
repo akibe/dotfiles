@@ -68,6 +68,10 @@ if [ -f $(brew --prefix)/etc/brew-wrap ];then
   }
 fi
 
+# Java
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+
 # OrbStack
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
