@@ -102,6 +102,7 @@ cask "zoom"
 # cask "telegram"
 cask "discord"
 cask "messenger"
+cask "readdle-spark"
 
 # Font
 # cask "font-fontawesome"
