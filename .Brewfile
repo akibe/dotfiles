@@ -68,6 +68,7 @@ cask "spotify"
 # cask "microsoft-excel"
 # cask "microsoft-powerpoint"
 cask "microsoft-teams"
+cask "notion"
 
 # Tools
 cask "1password"
