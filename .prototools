@@ -1,0 +1,7 @@
+[plugins.tools]
+biome = "https://raw.githubusercontent.com/Phault/proto-toml-plugins/main/biome/plugin.toml"
+terraform = "https://raw.githubusercontent.com/theomessin/proto-toml-plugins/master/terraform.toml"
+
+[settings]
+auto-install = true
+auto-clean = true

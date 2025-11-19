@@ -16,8 +16,6 @@
   "editor.codeActionsOnSave": {
     "quickfix.biome": "explicit",
     "source.organizeImports.biome": "explicit"
-    // "source.organizeImports": "explicit",
-    // "source.fixAll": "explicit"
   },
   "editor.quickSuggestions": {
     "other": true,
@@ -26,6 +24,22 @@
   },
   "editor.scrollBeyondLastLine": false,
   "editor.minimap.enabled": false,
+
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.trimAutoWhitespace": false,
+    "files.trimTrailingWhitespace": false,
+    "editor.formatOnSave": true
+  },
+
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   // Terminal
   "terminal.integrated.defaultProfile.osx": "zsh",
@@ -44,24 +58,10 @@
   "markdown-preview-enhanced.mermaidTheme": "forest",
 
   "tailwindCSS.hovers": true,
-  "git-graph.showStatusBarItem": false,
   "database-client.autoSync": true,
-
-  "[markdown]": {
-    "editor.wordWrap": "on",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.trimAutoWhitespace": false,
-    "files.trimTrailingWhitespace": false,
-    "editor.formatOnSave": true
-  },
-
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "git-graph.showStatusBarItem": false,
+  "git.confirmSync": false,
+  "git.autofetch": true
 }
 ```
 
@@ -76,7 +76,6 @@
 - EditorConfig
 - Git Graph
 - GitHub Pull Requests
-- GitLens
 - Live Preview
 - Markdown All in One
 - Markdown Preview Enhanced
