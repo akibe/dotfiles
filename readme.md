@@ -12,8 +12,11 @@ brew bundle --global
 proto setup
 proto install node
 proto install bun
-proto install go
-# proto install npm
-# proto install pnpm
+proto install npm
+proto install pnpm
 # proto install yarn
+# proto install go
+
+proto plugin add biome https://raw.githubusercontent.com/Phault/proto-toml-plugins/main/biome/plugin.toml
+proto install biome
 ```

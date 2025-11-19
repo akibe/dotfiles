@@ -1,9 +1,11 @@
 [user]
-	name = akibe
-	email = 10928+akibe@users.noreply.github.com
-
+	name = artcodec
+	email = dev@artcodec.co
 [ghq]
 	root = ~/Repos
-
 [init]
 	defaultBranch = main
+[http]
+	postBuffer = 157286400
+[core]
+	ignorecase = false

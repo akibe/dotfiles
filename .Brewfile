@@ -1,4 +1,5 @@
 # NEED: sudo xcodebuild -license accept
+ENV["PATH"] = "#{HOMEBREW_PREFIX}/bin:#{ENV["PATH"]}"
 
 ## Browser
 cask "brave-browser"
@@ -9,45 +10,46 @@ cask "brave-browser"
 ## Develop
 brew "ghq"
 brew "peco"
+brew "direnv"
+brew "mkcert"
 brew "proto"
 brew "awscli"
-brew "google-cloud-sdk"
 brew "firebase-cli"
 # brew "openjdk@17"
-# brew "git"
-brew "orbstack"
+cask "gcloud-cli"
+cask "orbstack"
 # cask "visual-studio-code"
 cask "cursor"
 # cask "coteditor"
 cask "obsidian"
 cask "cyberduck"
-cask "apidog"
+# cask "apidog"
 cask "tableplus"
 # cask "gas-mask"
 # cask "owasp-zap"
-# cask "ngrok"
+cask "ngrok"
+cask "tailscale"
 # cask "arduino-ide"
 # cask "ipfs"
+# cask "ipfs-desktop"
 cask "ledger-live"
 # https://frame.sh/
 # https://pinokio.co/
 
 ## Creative
 cask "adobe-creative-cloud"
-cask "zxpinstaller"
-cask "affinity-photo"
-cask "affinity-designer"
-cask "affinity-publisher"
+# cask "zxpinstaller"
+cask "affinity"
 cask "blender"
-cask "magicavoxel"
-cask "handbrake"
+# cask "magicavoxel"
+# cask "handbrake"
 cask "imageoptim"
 cask "vcv-rack"
-cask "upscayl"
-cask "processing"
+# cask "upscayl"
+# cask "processing"
 cask "tiled"
-cask "ableton-live-standard"
-cask "ik-product-manager"
+# cask "ableton-live-standard"
+# cask "ik-product-manager"
 # https://www.live2d.com/
 # https://vroid.com/studio
 
@@ -57,7 +59,6 @@ cask "ik-product-manager"
 # cask "loopback"
 cask "vlc"
 cask "spotify"
-# cask "kindle"
 # https://commentscreen.com
 # https://vcamapp.com/
 # https://denchisoft.com/
@@ -98,6 +99,8 @@ cask "raycast"
 # https://nas.ugreen.jp/pages/download-center
 # https://www.insta360.com/jp/download/insta360-link
 # https://www.logicool.co.jp/ja-jp/software/logi-options-plus.html
+# https://www.wakdev.com/en/apps/nfc-tools-pc-mac.html
+# https://www.wakdev.com/en/apps/nfc-tools-kbc-pc-mac.html
 
 ## Communicate
 cask "slack"
@@ -108,28 +111,26 @@ cask "discord"
 
 ## Font
 # cask "font-fontawesome"
+# cask "font-roboto"
 cask "font-m-plus-2"
 cask "font-rounded-mplus"
 cask "font-noto-color-emoji"
 cask "font-noto-sans-cjk-jp"
 cask "font-noto-serif-cjk-jp"
-# cask "font-biz-udgothic"
-# cask "font-biz-udmincho"
-# cask "font-biz-udpgothic"
-# cask "font-biz-udpmincho"
-# cask "font-roboto"
 cask "font-udev-gothic"
-# cask "font-udev-gothic-nf"
-# cask "font-0xproto-nerd-font"
+
+# https://opentype.jp/woffconv.htm  #WOFFコンバータ
+# https://opentype.jp/subsetfontmk.htm  #サブセットフォントメーカー
 
 ## MacApp
 brew "mas"
 mas "colorslurp", id: 1287239339
 mas "runcat", id: 1429033973
 mas "tunacan-2", id: 1594063111
-mas "photoresize", id: 492236133
-mas "remote-mouse", id: 403195710
 mas "line", id: 539883307
 mas "klack", id: 6446206067
-mas "mirack", id: 1468259834
 mas "ultimate-focus", id: 1663556775
+mas "kindle", id: 302584613
+mas "photoresize", id: 492236133
+# mas "remote-mouse", id: 403195710
+# mas "mirack", id: 1468259834
