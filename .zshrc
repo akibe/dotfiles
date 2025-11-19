@@ -112,5 +112,13 @@ RPROMPT='%F{yellow}%*%f'
 # ------------------------------------------------------------
 # エディタ / ブラウザ
 # ------------------------------------------------------------
-export EDITOR="cursor"
+export EDITOR="antigravity"
 export BROWSER="open"
+
+# proto
+export PROTO_HOME="$HOME/.proto";
+export PATH="$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH";
+
+# Added by Antigravity
+export PATH="/Users/akibe/.antigravity/antigravity/bin:$PATH"
+alias ag='antigravity'
