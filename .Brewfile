@@ -3,7 +3,7 @@ ENV["PATH"] = "#{HOMEBREW_PREFIX}/bin:#{ENV["PATH"]}"
 
 ## Browser
 cask "brave-browser"
-# cask "google-chrome"
+cask "google-chrome"
 # cask "firefox"
 # cask "microsoft-edge"
 
