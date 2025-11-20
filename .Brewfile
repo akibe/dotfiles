@@ -19,7 +19,6 @@ brew "firebase-cli"
 cask "gcloud-cli"
 cask "orbstack"
 # cask "visual-studio-code"
-cask "cursor"
 # cask "coteditor"
 cask "obsidian"
 cask "cyberduck"
@@ -30,10 +29,18 @@ cask "tableplus"
 cask "ngrok"
 cask "tailscale"
 # cask "arduino-ide"
+
+## Web3
 # cask "ipfs"
 # cask "ipfs-desktop"
 cask "ledger-live"
 # https://frame.sh/
+
+## AI
+cask "cursor"
+cask "antigravity"
+cask "claude-code"
+cask "codex"
 # https://pinokio.co/
 
 ## Creative
@@ -75,23 +82,21 @@ cask "pixelsnap"
 cask "cleanshot"
 cask "1password"
 cask "appcleaner"
-# cask "aws-vpn-client"
-
-# cask "cheatsheet"
-# cask "cooviewer" 
-# cask "easyfind"
 cask "google-drive"
 cask "hiddenbar"
 cask "jdownloader"
-# cask "keka"
 cask "betterzip"
-# cask "the-unarchiver"
+cask "raycast"
+cask "numi"
+# cask "aws-vpn-client"
 # cask "maccy"
 # cask "notion-calendar"
-cask "numi"
+# cask "cheatsheet"
+# cask "cooviewer" 
+# cask "easyfind"
 # cask "ogdesign-eagle"
 # cask "onyx"
-cask "raycast"
+
 # cask "scroll-reverser"
 # cask "resolutionator"
 
