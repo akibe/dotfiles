@@ -28,6 +28,7 @@ setopt MARK_DIRS              # 展開時にディレクトリ末尾へ /
 setopt NO_BEEP                # ビープ音を消す
 setopt PRINT_EIGHT_BIT        # 日本語ファイル名など8bitを通す
 setopt SHARE_HISTORY          # ターミナル間で履歴共有
+setopt PROMPT_SUBST           # プロンプト内で変数を展開・コマンド置換を行う
 
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
@@ -88,7 +89,16 @@ git_prompt_info() {
   echo " ‹${ref}›"
 }
 
-PROMPT='%F{cyan}%n%f:%F{green}%~%f$(git_prompt_info) %# '
+if [ -n "$SSH_CONNECTION" ]; then
+  # SSH接続時: user@host:dir
+  PROMPT='%F{cyan}%n@%m%f:%F{green}%c%f$(git_prompt_info) %# '
+elif [ "$TERM_PROGRAM" = "vscode" ] || [ "$TERM_PROGRAM" = "cursor" ]; then
+  # VSCode/Cursor (ローカル): dir のみ (GUIでブランチ確認可能)
+  PROMPT='%F{green}%2~%f %# '
+else
+  # 通常のローカル端末: dir + git
+  PROMPT='%F{green}%2~%f$(git_prompt_info) %# '
+fi
 RPROMPT='%F{yellow}%*%f'
 
 # ------------------------------------------------------------
