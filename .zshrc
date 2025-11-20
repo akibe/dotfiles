@@ -80,18 +80,7 @@ fi
 [ -f "$HOME/.orbstack/shell/init.zsh" ] && source "$HOME/.orbstack/shell/init.zsh"
 
 # ghq + peco
-# コマンドを途中まで入力後、ghqの管理化にあるリポジトリを一覧表示する。ctrl - ]にバインド。
-function ghq-cd () {
-  local selected_dir
-  selected_dir=$(ghq list -p | peco --prompt="repositories >" --query "$LBUFFER")
-  if [ -n "$selected_dir" ]; then
-    BUFFER="cd ${selected_dir}"
-    zle accept-line
-  fi
-  zle clear-screen
-}
-zle -N ghq-cd
-bindkey '^]' ghq-cd
+alias gcd='cd $(ghq list -p | peco)'
 
 # ------------------------------------------------------------
 # プロンプト（軽量 + Gitブランチ表示）
