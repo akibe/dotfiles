@@ -5,13 +5,10 @@ export LANG=ja_JP.UTF-8
 export LC_CTYPE=ja_JP.UTF-8
 
 # ------------------------------------------------------------
-# 色・補完
+# 補完
 # ------------------------------------------------------------
-autoload -Uz colors
-colors
-
 autoload -Uz compinit
-compinit -u
+compinit
 
 # ------------------------------------------------------------
 # 基本オプション
@@ -85,15 +82,11 @@ alias gcd='cd $(ghq list -p | peco)'
 # ------------------------------------------------------------
 # プロンプト（軽量 + Gitブランチ表示）
 # ------------------------------------------------------------
-# Gitブランチだけを簡易表示（負荷軽め）
 git_prompt_info() {
   local ref
   ref=$(git symbolic-ref --short HEAD 2>/dev/null) || return
   echo " ‹${ref}›"
 }
-
-autoload -Uz promptinit
-promptinit
 
 PROMPT='%F{cyan}%n%f:%F{green}%~%f$(git_prompt_info) %# '
 RPROMPT='%F{yellow}%*%f'
@@ -101,12 +94,8 @@ RPROMPT='%F{yellow}%*%f'
 # ------------------------------------------------------------
 # エディタ / ブラウザ
 # ------------------------------------------------------------
-export EDITOR="antigravity"
+export EDITOR="cursor"
 export BROWSER="open"
-
-# proto
-export PROTO_HOME="$HOME/.proto";
-export PATH="$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH";
 
 # Added by Antigravity
 export PATH="/Users/akibe/.antigravity/antigravity/bin:$PATH"
