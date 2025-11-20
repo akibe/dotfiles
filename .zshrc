@@ -92,8 +92,8 @@ git_prompt_info() {
 if [ -n "$SSH_CONNECTION" ]; then
   # SSH接続時: user@host:dir
   PROMPT='%F{cyan}%n@%m%f:%F{green}%c%f$(git_prompt_info) %# '
-elif [ "$TERM_PROGRAM" = "vscode" ] || [ "$TERM_PROGRAM" = "cursor" ]; then
-  # VSCode/Cursor (ローカル): dir のみ (GUIでブランチ確認可能)
+elif [ "$TERM_PROGRAM" = "vscode" ] || [ "$TERM_PROGRAM" = "cursor" ] || [ "$TERM_PROGRAM" = "antigravity" ]; then
+  # VSCode/Cursor/Antigravity (ローカル): dir のみ (GUIでブランチ確認可能)
   PROMPT='%F{green}%2~%f %# '
 else
   # 通常のローカル端末: dir + git
