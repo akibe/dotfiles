@@ -1,0 +1,8 @@
+[user]
+	name = akibe
+	email = dev@akibe.com
+
+# SSH接続時に自動的に github.com-akibe (SSH ConfigのHost) を使用する
+[url "git@github.com-akibe:"]
+	insteadOf = https://github.com/
+	insteadOf = git@github.com:

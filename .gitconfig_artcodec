@@ -1,0 +1,8 @@
+[user]
+	name = artcodec
+	email = dev@artcodec.co
+
+# SSH接続時に自動的に github.com-artcodec (SSH ConfigのHost) を使用する
+[url "git@github.com-artcodec:"]
+	insteadOf = https://github.com/
+	insteadOf = git@github.com:

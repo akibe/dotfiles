@@ -1,11 +1,74 @@
+# --- ユーザー設定 (デフォルト: 仕事用) ---
 [user]
 	name = artcodec
 	email = dev@artcodec.co
+
+# --- リポジトリ管理 ---
 [ghq]
 	root = ~/Repos
+
+# --- 初期化設定 ---
 [init]
+	# デフォルトブランチを main にする
 	defaultBranch = main
+
+# --- HTTP設定 ---
 [http]
+	# 大きなプッシュに対応するためのバッファ設定 (約150MB)
 	postBuffer = 157286400
+
+# --- コア設定 ---
 [core]
+	# 大文字小文字の変更を検知する (macOSデフォルトはtrueだが、意図的にfalseにしている場合はそのままでOK)
+	# ファイル名の大文字小文字リネームをGitに認識させるのに有効
 	ignorecase = false
+	
+	# 全プロジェクト共通の除外ファイル
+	excludesfile = ~/.gitignore_global
+	
+	# 日本語ファイル名の文字化けを防ぐ
+	quotepath = false
+
+# --- 推奨設定: Push ---
+[push]
+	# 初回push時に --set-upstream origin <branch> を自動設定
+	autoSetupRemote = true
+	# 現在のブランチと同名のりモートブランチにpush
+	default = current
+
+# --- 推奨設定: Pull ---
+[pull]
+	# pull時にマージコミットを作らずリベースする（履歴をきれいに保つ）
+	rebase = true
+
+# --- 推奨設定: Rebase ---
+[rebase]
+	# rebase時に作業中の変更を自動でstashし、終わったらpopする
+	autoStash = true
+
+# --- 推奨設定: Fetch ---
+[fetch]
+	# リモートで削除されたブランチをローカルからも削除する
+	prune = true
+
+# --- エイリアス (短縮コマンド) ---
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+	cp = cherry-pick
+	# グラフィカルなログ表示
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+# --- ユーザー別設定の読み込み ---
+
+# 仕事用 (デフォルト扱いだが、明示的なパス指定がある場合)
+# ~/Repos/github.com-artcodec/ 以下のリポジトリの場合
+[includeIf "gitdir:~/Repos/github.com-artcodec/"]
+	path = .gitconfig_artcodec
+
+# 個人用
+# ~/Repos/github.com-akibe/ 以下のリポジトリの場合
+[includeIf "gitdir:~/Repos/github.com-akibe/"]
+	path = .gitconfig_akibe
