@@ -75,6 +75,7 @@ cask "spotify"
 # cask "microsoft-excel"
 # cask "microsoft-powerpoint"
 # cask "microsoft-teams"
+cask "microsoft-outlook"
 
 ## Tools
 cask "sitesucker-pro"
@@ -111,6 +112,7 @@ cask "numi"
 cask "slack"
 cask "zoom"
 cask "discord"
+cask "chatwork"
 # cask "telegram"
 # cask "whatsapp"
 

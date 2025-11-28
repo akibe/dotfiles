@@ -107,6 +107,13 @@ RPROMPT='%F{yellow}%*%f'
 export EDITOR="cursor"
 export BROWSER="open"
 
+# ------------------------------------------------------------
+# エイリアス
+# ------------------------------------------------------------
+alias ll='ls -la'
+alias cr='cursor'
+
+
 # Added by Antigravity
 export PATH="/Users/akibe/.antigravity/antigravity/bin:$PATH"
 alias ag='antigravity'
