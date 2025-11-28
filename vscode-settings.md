@@ -5,7 +5,6 @@
   // UI
   "workbench.colorTheme": "Community Material Theme",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.activityBar.location": "top",
   "explorer.compactFolders": false,
 
   // Editor
