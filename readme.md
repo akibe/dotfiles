@@ -19,4 +19,6 @@ proto install pnpm
 
 proto plugin add biome https://raw.githubusercontent.com/Phault/proto-toml-plugins/main/biome/plugin.toml
 proto install biome
+
+proto pin --to global pnpm latest
 ```
