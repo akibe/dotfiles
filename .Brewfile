@@ -116,6 +116,9 @@ cask "chatwork"
 # cask "telegram"
 # cask "whatsapp"
 
+## Other
+cask "steam"
+
 ## Font
 # cask "font-fontawesome"
 # cask "font-roboto"
