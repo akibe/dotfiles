@@ -97,6 +97,7 @@ cask "numi"
 # cask "easyfind"
 # cask "ogdesign-eagle"
 # cask "onyx"
+cask "tunnelbear"
 
 # cask "scroll-reverser"
 # cask "resolutionator"
