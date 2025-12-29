@@ -99,6 +99,7 @@ cask "numi"
 # cask "ogdesign-eagle"
 # cask "onyx"
 cask "tunnelbear"
+cask "namechanger"
 
 # cask "scroll-reverser"
 # cask "resolutionator"
