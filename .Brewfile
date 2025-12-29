@@ -41,6 +41,7 @@ cask "cursor"
 cask "antigravity"
 cask "claude-code"
 cask "codex"
+cask "comfyui"
 # https://pinokio.co/
 
 ## Creative
