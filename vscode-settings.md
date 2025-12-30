@@ -4,7 +4,6 @@
 {
   // UI
   "workbench.colorTheme": "Community Material Theme",
-  "workbench.iconTheme": "material-icon-theme",
   "explorer.compactFolders": false,
 
   // Editor
@@ -66,10 +65,13 @@
 
 # Plugins
 
+- Antigravity Cockpit
 - Auto Rename Tag
 - Biome
+- Claude Code
 - Codex
 - Community Material Theme
+- Container Tools
 - Database Client
 - Drizzle ORM
 - EditorConfig
@@ -78,7 +80,6 @@
 - Live Preview
 - Markdown All in One
 - Markdown Preview Enhanced
-- Material Icon Theme
 - Path Intellisense
 - Prettier
 - Prisma
