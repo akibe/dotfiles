@@ -42,6 +42,9 @@ cask "antigravity"
 cask "claude-code"
 cask "codex"
 cask "comfyui"
+brew "ollama"
+brew "opencode" # anomalyco/tap/opencode
+
 # https://pinokio.co/
 
 ## Creative
