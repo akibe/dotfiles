@@ -42,6 +42,7 @@ cask "antigravity"
 cask "claude-code"
 cask "codex"
 cask "comfyui"
+cask "lm-studio"
 brew "ollama"
 brew "opencode" # anomalyco/tap/opencode
 
